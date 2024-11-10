@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes text {
+  0%, 100% {
+    background-size: 200% 200%;
+    background-position: left center;
+  }
+  50% {
+    background-size: 200% 200%;
+    background-position: right center;
+  }
+}
+
+.animate-text {
+  animation: text 5s ease infinite;
+}
+
+@layer base {
+  body {
+    @apply antialiased touch-manipulation;
+  }
+
+  /* Improve touch targets on mobile */
+  @media (max-width: 640px) {
+    button, a {
+      @apply min-h-[44px] min-w-[44px] flex items-center justify-center;
+    }
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
