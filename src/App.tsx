@@ -157,7 +157,7 @@ function App() {
           </div>
         </div>
         <div className="text-center mt-20 text-sm text-gray-400">
-          © 2024 AIKYATH. All rights reserved.
+          © 2024 AIKYATH. Developed by Siva Magapu ~ MCA-A.
         </div>
       </footer>
 
